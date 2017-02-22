@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FontTextView">
+        <attr name="addTypeface" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="FontButton">
+        <attr name="setTypeface" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="FontEditText">
+        <attr name="typeface" format="string"/>
+    </declare-styleable>
+
+</resources>

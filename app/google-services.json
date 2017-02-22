@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12057398457",
+    "firebase_url": "https://addictedarnotifi-1472696931954.firebaseio.com",
+    "project_id": "addictedarnotifi-1472696931954",
+    "storage_bucket": "addictedarnotifi-1472696931954.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12057398457:android:5bf42e149fde9c5d",
+        "android_client_info": {
+          "package_name": "com.addictedartgallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12057398457-n526k7jqo1luoabl79v77c6tm6jp70ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6_HxaBtBYSvwe6_PS0gd3DDA5PZa0T64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

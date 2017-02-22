@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tooltip_color">#33000000</color>
+    <color name="transparent_black">#E0E0E0</color>
+    <color name="pink">#a31d53</color>
+    <color name="white">#ffffff</color>
+    <color name="light_color">#e4e4e4</color>
+
+
+    <!-- Custom Progress Bar Color -->
+    <color name="custom_progress_bar_default_color">#b1000000</color>
+    <color name="custom_progress_bar_grey_color">#449E9E9E</color>
+
+</resources>

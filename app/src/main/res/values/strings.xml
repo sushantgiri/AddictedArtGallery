@@ -1,0 +1,142 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Addicted AR</string>
+
+    <!-- Font -->
+    <string name="Light">Nexa Light.otf</string>
+    <string name="Bold">Nexa Bold.otf</string>
+
+
+    <!-- Images Content Description -->
+    <string name="content_description">Content Description</string>
+
+
+    <!--  Get Started Guide   -->
+
+    <string name = "GetStarted">How to Get Started?</string>
+
+    <string name="StepOne"> <![CDATA[ Browse the website and add artwork you love using the <img src =ic_visibility_black_24dp> icon to the <b>Addicted App</b> ]]></string>
+    <string name="StepTwo"> <![CDATA[ Print the Addicted Art Gallery <font color=#3b5998><b><a href=\"https://devweb.addictedgallery.com/addicted-mobile-app\">logo marker</a></b></font> on A4 paper]]></string>
+    <string name="StepThree"> <![CDATA[ Tape the logo to the wall where you want to view the artwork ]]></string>
+    <string name="StepFour"> <![CDATA[ Open the <b>Addicted App</b> and login ]]></string>
+    <string name="StepFive"> <![CDATA[ Point your tablet\'s camera to the logo taped on the wall - do this while standing about 1 metre away to allow your camera to focus ]]></string>
+    <string name="StepSix"> <![CDATA[ Click on the right arrow to see the different artworks on your wall ]]></string>
+
+    <string name="Notes"> <![CDATA[ PLEASE NOTE: If you are adding artwork to the App using your tablet, you\'ll see a black box pop up with
+    \"Addicted AR updatearlist\". You\'ll need to close the box and this not so sexy message by tapping anywhere on the black bar before switching
+    back to the App. It will happen each time you Add to App via your tablet. Bear with us, we\'re working on this little quirk  &#128512;&#8230; ]]></string>
+
+    <string name="SignIn">Sign In</string>
+
+
+
+
+    <!-- Login -->
+    <string name="sign_up_using_your">SIGN UP USING YOUR</string>
+    <string name="addictedgallery_com">\u0020ADDICTED ART GALLERY</string>
+    <string name="account">\u0020ACCOUNT</string>
+    <string name="email">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="if_you_don_t_have_an_addicted_gallery_account">If you don\'t have an Addicted Art Gallery Account,</string>
+    <string name="sign_up">\u0020click here\u0020</string>
+    <string name="facebook">Login With Facebook</string>
+
+
+    <!-- Links To Browser-->
+
+    <string name="LogoMarker">https://devweb.addictedgallery.com/addicted-mobile-app</string>
+    <string name="Registration">https://devweb.addictedgallery.com/?register=true</string>
+    <string name="AddictedGallery">https://devweb.addictedgallery.com</string>
+    <string name="About">https://devweb.addictedgallery.com/#/about</string>
+    <string name="Contact">https://devweb.addictedgallery.com/#/contact</string>
+    <string name="BuyArt">https://devweb.addictedgallery.com/#/Products/Detail/</string>
+
+
+
+    <!-- Url Used in Post Body-->
+    <string name="PostUrl">https://devapi.addictedgallery.com/en/Authenticate</string>
+
+
+    <!-- Dashboard -->
+
+    <string name="KudanAPIKey" tools:ignore="TypographyDashes">GjkFeUkMM9sdUHf3Sk0BT448nz97GnvgG34XxkWNfm5f+qx1rTUth3CjB7L+Pqm+lkCMZZXzIMXAb9P/f+yKhjk0lnh/erhWPdF2kSOXvvzTsNej8X3/L+e68Um/M87vaOnco1PWuNXaetBMZ/p/wuYkf+RNhCrKALN0sai++ZV/Na4Rgtl+xBx00pDODvHGDP21IN7MwCZyQJ4DZ9etcNNhtDXE+tYTn505+Qac9jjPO5Vy6Zy20i3V+EGXdbLwmZWptiEpWIM8JCME2oTww8ouQbEiG7q7Znf0Jh10C8BHn1nk7w8XalF7wTmRoO5FF0iqUr8DsPCV2AeFXk2xB6M6FXPCQklRlrAsh+PsuFO4fi1M0plFvuQg+y1F2byHJVPk/ovkD7L+FCS6YFqV53y2bzINM+vBQ5fEXpDrsUx3q75NgyApxz4P5NoE3I8344HLF0sw84mYqPGHV/Kr8JXnhxwB5fR2LZxzY9OC7viPORq+KDSIrEnbEk5K9IWkcGgm8PfJjvVmNO0Q02V2wBxdqwxoBB5S5W50Ye5jzdiZW0kNzv1IQPpO9YKVuwh24UTJLu7SP+zbJPiw8e9Tdj4fxuMjXJ4IU6Kty6Js3k+gJWv9j4ywnHLlTaPj58RPwi0PSW2C4DT2BSXvqSjq30vUiuYXTab1gl6v5hznNlM=</string>
+
+    <string name="AboutUs">ABOUT US</string>
+    <string name="Tutorial">TUTORIAL</string>
+    <string name="LogOut">LOG OUT</string>
+    <string name="ReportIssue">REPORT ISSUE</string>
+
+    <string name="AboutThisArtwork">ABOUT THIS ARTWORK</string>
+
+    <string name="BuyArtWork">CHECK AVAILABILITY</string>
+    <string name="ContactUs">CONTACT US</string>
+
+
+
+
+    <string name="Beta">Beta</string>
+    <string name="Intent">GuideIntent</string>
+
+
+    <!-- Dialogs -->
+
+
+    <string name="logOutText">Do you want to log out?</string>
+    <string name="back">BACK</string>
+    <string name="logout">LOGOUT</string>
+
+
+    <string name="viewOnline">VIEW ONLINE</string>
+
+
+    <!-- No Credentials -->
+
+    <string name="HoldUp">Hold up!</string>
+    <string name="ValidationText"><![CDATA[We can\'t let you in just yet - you forgot to enter your login details&#8230; &#128540;]]></string>
+    <string name="OK">OK</string>
+
+
+    <!-- Invalid Credentials -->
+    <string name="InvalidCredentialsHeader"><![CDATA[It happens to best of us&#8230;]]></string>
+    <string name="InvalidCredentialsBody"><![CDATA[Your username or password is incorrect. Please check your details and try logging in again &#128515;]]></string>
+
+
+   <!-- No Internet -->
+    <string name="Error">Error</string>
+    <string name="NoInternetBody"><![CDATA[It looks like the network has had a brainfart &#128563; - please try again.]]> </string>
+
+    <!-- Facebook -->
+    <string name="FacebookBody">Facebook login failed, Please try again</string>
+
+    <!-- No ArtWork -->
+    <string name="NoArtworkHeader">Hang on a Sec!</string>
+    <string name="NoArtworkBody"><![CDATA[ We know you\'re excited to use the Addicted App, but you need to add some artwork first. Go to <font color=#3b5998> <a href=\"https://devweb.addictedgallery.com/addicted-mobile-app\">Addicted Art Gallery</a></font> and add away!&#128077;]]></string>
+    <string name="Close">CLOSE</string>
+
+    <!-- Network Error -->
+    <string name="NetworkError">Network Error</string>
+    <string name="NetworkErrorBody"><![CDATA[It looks like the internet is taking break. Please check your connection and tell it to get back to work! &#128526;]]></string>
+    <string name="Retry">Retry</string>
+
+
+    <!-- Feedback -->
+    <string name="feedbackHead">Give Us Some Feedback</string>
+    <string name="FeedbackBody"><![CDATA[If it\'s good - high fives all around! &#128588; &#128588; &#128588; <br/>
+                                If it\'s bad - &#x1f622; <br/>
+                                If it\'s broken - let us know and we\'ll do our best to fix it &#9874; ]]></string>
+    <string name="FeedbackHint">Leave your Addicted App feedback here</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="AddictedAR">Addicted AR</string>
+    <string name="TrelloEmptyBody">Kindly write what your issue is?</string>
+    <string name="TrelloThankYou">Thank you. We will get back to you soon.</string>
+
+
+    <!-- Push Notifications -->
+    <string name="fcmAction">fcmAction</string>
+    <string name="fcmMessage">fcmMessage</string>
+
+    <string name="Notification">Notification!</string>
+
+
+</resources>

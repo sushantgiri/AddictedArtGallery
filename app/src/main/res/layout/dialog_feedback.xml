@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:scrollbars="none"
+    android:minWidth="350dp"
+    android:padding="8dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/issueButtonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/close"
+        android:contentDescription="@string/content_description"
+        />
+
+    <com.addictedartgallery.widgets.fonts.FontTextView
+        app:addTypeface="@string/Bold"
+        android:id="@+id/dialog_report_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/feedbackHead"
+        android:textSize="18sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        tools:ignore="RelativeOverlap" />
+
+    <com.addictedartgallery.widgets.fonts.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:addTypeface="@string/Light"
+        android:textSize="18sp"
+        android:layout_below="@id/dialog_report_header"
+        android:id="@+id/dialog_report_text"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <com.addictedartgallery.widgets.fonts.FontEditText
+        app:typeface="@string/Light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:background="#dddddd"
+        android:maxLines="10"
+        android:minLines="5"
+        android:hint="@string/FeedbackHint"
+        android:padding="5dp"
+        android:textColor="@android:color/tab_indicator_text"
+        android:layout_below="@id/dialog_report_text"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/report_issue_text"/>
+
+    <com.addictedartgallery.widgets.fonts.FontButton
+        android:id="@+id/submit_report_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:setTypeface="@string/Bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/report_issue_text"
+        android:background="@mipmap/pink"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        tools:ignore="ButtonStyle"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

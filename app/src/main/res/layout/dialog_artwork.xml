@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:minWidth="360dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/close"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/content_description"
+        android:id="@+id/closeButton"/>
+
+
+
+    <com.addictedartgallery.widgets.fonts.FontTextView
+        android:id="@+id/artwork_dialog_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:addTypeface="@string/Light"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/AboutThisArtwork"
+        android:layout_alignParentTop="true"
+        android:textSize="21sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <com.addictedartgallery.widgets.fonts.FontTextView
+        app:addTypeface="@string/Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/artwork_dialog_header"
+        android:id="@+id/artwork_dialog_image_name"
+        android:layout_marginBottom="16dp"/>
+
+    <com.addictedartgallery.widgets.fonts.FontTextView
+        app:addTypeface="@string/Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/artwork_dialog_image_name"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/artwork_dialog_artist_name"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@id/artwork_dialog_artist_name"
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:layout_height="100dp">
+
+    <com.addictedartgallery.widgets.fonts.FontTextView
+        app:addTypeface="@string/Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/artwork_dialog_artist_details"/>
+    </ScrollView>
+
+    <com.addictedartgallery.widgets.fonts.FontButton
+        app:setTypeface="@string/Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pink"
+        android:text="@string/viewOnline"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:id="@+id/artwork_dialog_view_online"
+        android:layout_below="@id/scroll"/>
+
+
+</RelativeLayout>

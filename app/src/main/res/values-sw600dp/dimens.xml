@@ -1,0 +1,113 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Tooltip dimensions -->
+
+    <dimen name="tooltip_width">200dp</dimen>
+    <dimen name="tooltip_padding">18dp</dimen>
+    <dimen name="menu_tooltip_padding">4dp</dimen>
+    <dimen name="tip_radius">4dp</dimen>
+    <dimen name="tip_dimen_regular">16dp</dimen>
+    <dimen name="tip_dimen_small">12dp</dimen>
+
+    <!-- Splash Screen Dimensiom -->
+    <dimen name="splash_screen_imageview_width">600dp</dimen>
+    <dimen name="splash_screen_progress_bar_width">80dp</dimen>
+    <dimen name="splash_screen_progress_bar_height">80dp</dimen>
+
+
+    <!-- TrainingActivity Class Dimension -->
+
+    <dimen name="sign_in_button_marginEnd">20dp</dimen>
+    <dimen name="sign_in_button_marginBottom">20dp</dimen>
+    <dimen name="addicted_logo_marginStart">20dp</dimen>
+    <dimen name="addicted_logo_marginTop">18dp</dimen>
+    <dimen name="logo_maxHeight">250dp</dimen>
+    <dimen name="logo_maxWidth">250dp</dimen>
+    <dimen name="one_button_max_height">40dp</dimen>
+    <dimen name="one_button_max_width">40dp</dimen>
+    <dimen name="one_button_margin_start">35dp</dimen>
+    <dimen name="one_button_margin_bottom">15dp</dimen>
+    <dimen name="one_button_margin_top">20dp</dimen>
+    <dimen name="two_button_max_height">40dp</dimen>
+    <dimen name="two_button_max_width">40dp</dimen>
+    <dimen name="two_button_margin_start">35dp</dimen>
+    <dimen name="two_button_margin_bottom">15dp</dimen>
+    <dimen name="three_button_max_height">40dp</dimen>
+    <dimen name="three_button_max_width">40dp</dimen>
+    <dimen name="three_button_margin_start">35dp</dimen>
+    <dimen name="three_button_margin_bottom">15dp</dimen>
+    <dimen name="four_button_max_height">40dp</dimen>
+    <dimen name="four_button_max_width">40dp</dimen>
+    <dimen name="four_button_margin_start">35dp</dimen>
+    <dimen name="four_button_margin_bottom">15dp</dimen>
+    <dimen name="five_button_max_height">42dp</dimen>
+    <dimen name="five_button_max_width">42dp</dimen>
+    <dimen name="five_button_margin_start">35dp</dimen>
+    <dimen name="five_button_margin_bottom">15dp</dimen>
+    <dimen name="six_button_max_height">40dp</dimen>
+    <dimen name="six_button_max_width">40dp</dimen>
+    <dimen name="six_button_margin_start">35dp</dimen>
+    <dimen name="six_button_margin_bottom">15dp</dimen>
+    <dimen name="seven_button_max_height">40dp</dimen>
+    <dimen name="seven_button_max_width">40dp</dimen>
+    <dimen name="seven_button_margin_start">35dp</dimen>
+    <dimen name="seven_button_margin_bottom">15dp</dimen>
+    <dimen name="text1_margin_start">10dp</dimen>
+    <dimen name="text1_margin_bottom">5dp</dimen>
+    <dimen name="text2_margin_bottom">5dp</dimen>
+    <dimen name="text3_margin_start">10dp</dimen>
+    <dimen name="text3_margin_bottom">5dp</dimen>
+    <dimen name="text4_margin_bottom">5dp</dimen>
+    <dimen name="text5_margin_bottom">5dp</dimen>
+    <dimen name="text6_margin_start">10dp</dimen>
+    <dimen name="text6_margin_bottom">5dp</dimen>
+    <dimen name="text7_margin_bottom">5dp</dimen>
+    <dimen name="text5_margin_start">6dp</dimen>
+    <dimen name="logo_marker_margin_start">5dp</dimen>
+    <dimen name="paper_margin_start">5dp</dimen>
+    <dimen name="link_margin_start">5dp</dimen>
+    <dimen name="getStarted_margin_top">14dp</dimen>
+    <dimen name="getStarted_margin_bottom">14dp</dimen>
+    <dimen name="getStarted_text_size">20sp</dimen>
+
+    <dimen name="default_text_size">20sp</dimen>
+
+
+    <!--Login Screen Dimension-->
+    <dimen name="login_image_width">410dp</dimen>
+    <dimen name="activity_login_padding">25dp</dimen>
+    <dimen name="login_image_margin_bottom">8dp</dimen>
+    <dimen name="relative_margin_start">220dp</dimen>
+    <dimen name="relative_margin_end">220dp</dimen>
+    <dimen name="relative_padding">22dp</dimen>
+    <dimen name="email_height">58dp</dimen>
+    <dimen name="email_padding_start">15dp</dimen>
+    <dimen name="email_padding_end">15dp</dimen>
+    <dimen name="email_margin_bottom">14dp</dimen>
+    <dimen name="password_height">58dp</dimen>
+    <dimen name="password_margin_bottom">14dp</dimen>
+    <dimen name="password_padding_start">15dp</dimen>
+    <dimen name="password_padding_end">15dp</dimen>
+    <dimen name="login_button_margin_bottom">10dp</dimen>
+    <dimen name="login_default_text">16sp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="or_text_size">16sp</dimen>
+    <dimen name="facebook_padding_start">5dp</dimen>
+    <dimen name="facebook_padding_end">30dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="text2_margin_end">5dp</dimen>
+    <dimen name="activity_login_relative_layout_margin_top">2dp</dimen>
+    <dimen name="activity_login_relative_layout_padding">10dp</dimen>
+    <dimen name="activity_login_relative_layout_margin_bottom">8dp</dimen>
+    <dimen name="activity_login_relative_layout_text_size">14sp</dimen>
+    <dimen name="login_button_height">60dp</dimen>
+    <dimen name="second_relative_margin_bottom">15dp</dimen>
+
+
+    <!-- Addicted Screen Dimensions -->
+    <dimen name="main_screen_image_width">200dp</dimen>
+
+</resources>

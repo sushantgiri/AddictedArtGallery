@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.addictedartgallery"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs/'] } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':cardboard')
+    compile project(':kudanar')
+
+    android {
+        sourceSets {
+            main {
+                jni.srcDirs = []
+            }
+        }
+    }
+
+
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.wang.avi:library:2.1.2'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.google.firebase:firebase-messaging:9.6.0'
+    compile 'com.google.android.gms:play-services:9.6.0'
+    compile 'com.amazonaws:aws-android-sdk-sns:2.2.+'
+    compile 'com.amazonaws:aws-android-sdk-core:2.2.+'
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':cardboard')
+    compile project(':kudanar')
+}
+
+apply plugin: 'com.google.gms.google-services'
