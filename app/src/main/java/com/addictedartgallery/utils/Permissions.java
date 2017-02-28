@@ -31,9 +31,12 @@ public class Permissions {
     }
 
     public void requestPermission(Activity activity, boolean isFacebook, FacebookData facebookData, String username, String email, String password, PostData accessData, Class destination) {
-        if (!hasPermissions(activity, PERMISSIONS))
-            ActivityCompat.requestPermissions(activity, PERMISSIONS, 111);
-
+        if (!hasPermissions(activity, PERMISSIONS)) {
+            if(!isFacebook)
+                ActivityCompat.requestPermissions(activity, PERMISSIONS, 111);
+            else
+                ActivityCompat.requestPermissions(activity, PERMISSIONS, 112);
+        }
         else {
             if (isFacebook)
                 preferences.setFacebookDetails(facebookData.getAccessToken(), String.valueOf(facebookData.getExpire()), facebookData.getRealm(), facebookData.getLogin(), username);

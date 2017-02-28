@@ -415,6 +415,9 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
                 break;
 
             case "LOG OUT":
+                if(snsPush == null)
+                    LogOut.show(this,preferences,null,null);
+                else
                 LogOut.show(this,preferences,snsPush.getAmazonSNSClient(),snsPush.getSubscriptionId());
                 break;
 
@@ -669,9 +672,11 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
                 }
 
             }else{
-                preferences.clearData();
-                startActivity(new Intent(Dashboard.this, Login.class));
-                finish();
+//                preferences.clearData();
+//                startActivity(new Intent(Dashboard.this, Login.class));
+//                finish();
+                  progressBar.setVisibility(View.GONE);
+                  NoArtWork.show(Dashboard.this);
             }
         }
 

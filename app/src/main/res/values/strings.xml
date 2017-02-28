@@ -55,7 +55,7 @@
 
     <!-- Url Used in Post Body-->
     <string name="PostUrl">https://devapi.addictedgallery.com/en/Authenticate</string>
-
+    <!--<string name="PostUrl">https://api.addictedgallery.com/en/Authenticate</string>-->
 
     <!-- Dashboard -->
 

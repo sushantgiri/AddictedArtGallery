@@ -39,7 +39,8 @@ public abstract class BaseAuth extends AppCompatActivity {
         preferences.setFreshInstall(false);
 
         oAuth = new OAuth(this);
-        oAuth.initialize("ABCOnqX3O2ll69pIslg98gaw3eg");
+        oAuth.initialize("lnxLWxmW7qKc4KDLpr1ghMbC5sc");
+//        oAuth.initialize("ABCOnqX3O2ll69pIslg98gaw3eg");
         users = new OAuthUsers(oAuth);
         provider = "facebook";
 

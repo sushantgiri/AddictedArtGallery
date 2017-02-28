@@ -24,7 +24,7 @@ public interface ApiInterface {
 
     @FormUrlEncoded
     @POST("en/account/socialmob")
-    Call<FacebookResponse> getFacebookAccessToken(@Field("type") String provider, @Field("token") String token, @Field("socialid") String socialId);
+    Call<FacebookResponse> getFacebookAccessToken(@Field("type") String provider, @Field("token") String token, @Field("socialid") String socialId , @Field("access_expire") String accessExpire);
 
     @GET("en/account/profile")
     Call<Profile> getUserProfile(@Header("Authenticate") String authenticate);

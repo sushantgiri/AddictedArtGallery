@@ -206,6 +206,14 @@ public class Login extends BaseAuth implements View.OnClickListener {
             else
                 permissions.permissionsNotSelected(this);
 
+        }else if(requestCode == 112)
+        {
+            if(permissions.hasPermissions(this,permission))
+            permissions.requestPermission(Login.this,true,
+                    facebookData,username,email,password,accessData, Dashboard.class);
+
+            else
+                permissions.permissionsNotSelected(this);
         }
     }
 
@@ -229,7 +237,7 @@ public class Login extends BaseAuth implements View.OnClickListener {
                 String id = data.getString("id");
                 username = data.getString("email");
 
-                facebookCall = apiService.getFacebookAccessToken(oAuthData.provider, oAuthData.token, id);
+                facebookCall = apiService.getFacebookAccessToken(oAuthData.provider, oAuthData.token, id,"36000");
                 facebookCall.enqueue(facebookResponseCallback);
 
             } catch (JSONException e) {
