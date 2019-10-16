@@ -8,21 +8,32 @@
 
 
 
-
-
-    <Button
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/beta"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:paddingTop="5dp"
-        android:drawableTop="@mipmap/ic_mail_outline_white_24dp"
-        android:background="@drawable/circle"
-        android:textColor="#ffffff"
-        android:textAllCaps="false"
-        android:text="@string/Beta"
-        android:drawablePadding="-9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/pink"
+        android:src="@mipmap/ic_mail_outline_white_24dp"
         />
+
+
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/beta"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:drawableTop="@mipmap/ic_mail_outline_white_24dp"-->
+        <!--android:background="@drawable/circle"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:drawablePadding="-9dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--/>-->
 
 
     <com.wang.avi.AVLoadingIndicatorView

@@ -69,7 +69,7 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
     AVLoadingIndicatorView progressBar;
     private FloatingActionButton nextButton, previousButton;
     private FloatingActionButton shopIcon, infoIcon, hamIcon;
-    private Button betaButton;
+    private FloatingActionButton betaButton;
     private ViewGroup root;
     private ImageView logo;
 
@@ -109,7 +109,8 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ARAPIKey key = ARAPIKey.getInstance();
-        key.setAPIKey("GAWQE-FDGML-DFTWK-KZMTC-Y47ZG-C757T-ZW3N9-XCWQC-CUA9P-6QAXK-F3P7G-E35ZB-SESS4-89S4M-NB29Z-A");
+        key.setAPIKey(getString(R.string.KudanAPIKey));
+//        key.setAPIKey("GAWQE-FDGML-DFTWK-KZMTC-Y47ZG-C757T-ZW3N9-XCWQC-CUA9P-6QAXK-F3P7G-E35ZB-SESS4-89S4M-NB29Z-A");
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -121,7 +122,7 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
 
         progressBar = (AVLoadingIndicatorView) findViewById(R.id.activity_ar_progressBar);
 
-        betaButton = (Button)findViewById(R.id.beta);
+        betaButton = findViewById(R.id.beta);
         betaButton.setOnClickListener(this);
 
         nextButton = (FloatingActionButton) findViewById(R.id.next);
@@ -179,7 +180,7 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
         if(userName != null && realm != null && accessToken != null)
         {
             String r1 = ViewUtils.getMd5Key(userName + ":" + realm + ":" + accessToken);
-            String r2 = ViewUtils.getMd5Key("GET:https://devapi.addictedgallery.com/en/account/profile:");
+            String r2 = ViewUtils.getMd5Key("GET:https://api.addictedgallery.com/en/account/profile:");
             String auth = ViewUtils.getMd5Key(r1 + ":" + accessToken + ":" + r2);
             authenticate = userName + ":" + auth;
 
@@ -209,16 +210,30 @@ public class Dashboard extends ARActivity implements AdapterView.OnItemClickList
 
     }
 
-    public void setup() {
+    @Override
+    public void setup()
+    {
+        super.setup();
         addImageTrackable();
+        // AR Content to be set up here
     }
 
+//    public void setup() {
+//        addImageTrackable();
+//    }
+
     private void addImageTrackable() {
-        trackable = new ARImageTrackable("marker");
-        trackable.loadFromAsset("addictedmarker.jpg");
-        trackable.addListener(this);
-        ARImageTracker trackableManager = ARImageTracker.getInstance();
-        trackableManager.addTrackable(trackable);
+        try {
+            trackable = new ARImageTrackable("addictedmarker");
+            trackable.loadFromAsset("addictedmarker.jpg");
+            trackable.addListener(this);
+            ARImageTracker trackableManager = ARImageTracker.getInstance();
+            trackableManager.initialise();
+
+            trackableManager.addTrackable(trackable);
+        }catch (Exception e){
+            System.out.println("Exception" + e.getMessage());
+        }
     }
 
     private void tooltipProperties() {

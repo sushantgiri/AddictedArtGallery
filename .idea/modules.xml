@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AddictedArtGallery.iml" filepath="$PROJECT_DIR$/AddictedArtGallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KudanAR/KudanAR.iml" filepath="$PROJECT_DIR$/KudanAR/KudanAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addicted-ar-android.iml" filepath="$PROJECT_DIR$/addicted-ar-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cardboard/cardboard.iml" filepath="$PROJECT_DIR$/cardboard/cardboard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kudanar/kudanar.iml" filepath="$PROJECT_DIR$/kudanar/kudanar.iml" />
     </modules>
   </component>
 </project>

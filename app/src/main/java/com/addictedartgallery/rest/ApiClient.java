@@ -5,8 +5,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "https://devapi.addictedgallery.com/";
-//    private static final String BASE_URL = "https://api.addictedgallery.com/";
+//    private static final String BASE_URL = "https://devapi.addictedgallery.com/";
+    private static final String BASE_URL = "https://api.addictedgallery.com/";
 
     private static Retrofit retrofit = null;
 

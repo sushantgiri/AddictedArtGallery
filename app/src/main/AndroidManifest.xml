@@ -17,10 +17,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".utils.AddictedArtGalleryApplication">
+        android:name="com.addictedartgallery.utils.AddictedArtGalleryApplication"
+        >
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <activity
-            android:name=".activities.Splash"
+            android:name="com.addictedartgallery.activities.Splash"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true">
             <intent-filter>
@@ -29,18 +34,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.Guide"
+        <activity android:name="com.addictedartgallery.activities.Guide"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
 
-        <activity android:name=".activities.Login"
+        <activity android:name="com.addictedartgallery.activities.Login"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
 
-        <activity android:name=".Dashboard"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.addictedartgallery.Dashboard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
 
 
 
-        <service android:name=".notifications.AddictedInstanceIDService"
+        <service android:name="com.addictedartgallery.notifications.AddictedInstanceIDService"
             tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
@@ -48,7 +54,7 @@
         </service>
 
 
-        <service android:name=".notifications.AddictedMessagingService"
+        <service android:name="com.addictedartgallery.notifications.AddictedMessagingService"
             tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
